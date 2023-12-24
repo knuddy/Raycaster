@@ -15,7 +15,9 @@ include_directories(${SDL2_INCLUDE_DIR} ${SDL2_IMAGE_INCLUDE_DIRS})
 add_executable(
         Raycaster
         main.cpp
-        core/texture.cpp core/texture.h
+        core/include.h
+        core/structures.h
+        core/timer.h
 )
 
 target_link_libraries(Raycaster ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARIES})
